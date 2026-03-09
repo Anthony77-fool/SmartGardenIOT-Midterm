@@ -8,9 +8,9 @@ const int relayPin = 5; // D1 on ESP8266 is GPIO 5
 #define DHTPIN 4 
 #define DHTTYPE DHT11
 
-const char* ssid = "iQOO Neo10";
-const char* password = "mark1234";
-const char* serverName = "http://192.168.132.67/PHP_Projects/SmartGardenIOT/insert_data.php"; // Change to your IP
+const char* ssid = "SSID-USERNAME";
+const char* password = "PASSWORD";
+const char* serverName = "http://IP_ADDRESS/PHP_Projects/SmartGardenIOT/insert_data.php"; // Change to your IP
 
 DHT dht(DHTPIN, DHTTYPE);
 
