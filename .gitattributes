@@ -1,8 +1,14 @@
-# Ensure C++ files are counted in the language bar
+# 1. Force all hardware files to be detected as C++
 *.ino linguist-language=C++
 *.cpp linguist-language=C++
 *.h linguist-language=C++
 
-# Ensure they are not ignored as "documentation" or "small files"
+# 2. Tell GitHub these are "detectable" even if they are small
 *.ino linguist-detectable=true
 *.cpp linguist-detectable=true
+
+# 3. Optional: "Hide" the parts of Laravel that are bloating the PHP stats
+# This helps the small C++ code show up in the percentage bar
+resources/views/**/*.blade.php linguist-detectable=false
+public/**/*.css linguist-detectable=false
+public/**/*.js linguist-detectable=false
