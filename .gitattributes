@@ -1,0 +1,8 @@
+# Ensure C++ files are counted in the language bar
+*.ino linguist-language=C++
+*.cpp linguist-language=C++
+*.h linguist-language=C++
+
+# Ensure they are not ignored as "documentation" or "small files"
+*.ino linguist-detectable=true
+*.cpp linguist-detectable=true
